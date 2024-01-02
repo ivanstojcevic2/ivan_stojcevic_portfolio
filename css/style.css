@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+#main-container {
+  text-align: center;
+}
+
+#random-shorts {
+  padding-top: 5%;
+  font-size: 26pt;
+}
+
+#music-videos {
+  padding-top: 5%;
+  font-size: 26pt;
+}
+
+#real-estate {
+  padding-top: 5%;
+  font-size: 26pt;
+}
+
+.video-source {
+  width: 500px;
+}
+
+.music-video-source {
+  width: 720px;
+  height: 405px;
+}
