@@ -15,67 +15,286 @@
     <title>Ivan Stojčević</title>
   </head>
   <body>
-    <div id="main-container">
+    <div id="header">
       <h1>Ivan Stojčević</h1>
-      <hr style="width: 50%" />
-      <h2>Video | Foto | Web</h2>
-
-      <div id="random-shorts" class="video-group-container">
-        <h2>RANDOM SHORTS</h2>
-        <iframe
-          src="https://drive.google.com/file/d/1WnxyLQ2MCkX4GVJy2FeEOOzM4yywa6QK/preview"
-          width="600"
-          height="480"
-          allow="autoplay"
-        ></iframe>
-        <iframe
-          src="https://drive.google.com/file/d/1o8WE2ycoAXaGxAcL-7eDzrdUbA_JeDJ6/preview"
-          width="600"
-          height="480"
-          allow="autoplay"
-        ></iframe>
-        <iframe
-          src="https://drive.google.com/file/d/1IsuEvfJcUGs0rw7VfYxWF80xHim6B_t9/preview"
-          width="600"
-          height="480"
-          allow="autoplay"
-        ></iframe>
+      <div id="navigacija-desktop">
+        <header>
+          <div class="container">
+            <nav>
+              <ul>
+                <li>
+                  <a
+                    href="#pocetna-page"
+                    class="active"
+                    onclick="showPage('pocetna-page'); setActive('pocetna-page')"
+                    >Početna</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#web-page"
+                    onclick="showPage('web-page'); setActive('web-page')"
+                    >Web</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#video-page"
+                    onclick="showPage('video-page');setActive('video-page')"
+                    >Video</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#foto-page"
+                    onclick="showPage('foto-page');setActive('foto-page')"
+                    >Foto</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#kontakt-page"
+                    onclick="showPage('kontakt-page');setActive('kontakt-page');"
+                    >Kontakt</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
       </div>
-
-      <div id="music-videos">
-        <h2>MUSIC VIDEOS</h2>
-        <iframe
-          src="https://drive.google.com/file/d/1m4nilHHY4_G-ZIzHJKegMGU9KdJkMMBP/preview"
-          width="600"
-          height="350"
-          allow="autoplay"
-        ></iframe>
-        <iframe
-          src="https://www.youtube.com/embed/ceSYy0q6nHU?si=FzWmssQv1tc2cHXU"
-          width="600"
-          height="350"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
-        <iframe
-          src="https://drive.google.com/file/d/1pwIVMLF4CqvAvQ63-ZphIH1i2foNZI2h/preview"
-          width="600"
-          height="350"
-          allow="autoplay"
-        ></iframe>
+      <div id="navigacija-mobile">
+        <header id="mobile-header">
+          <div class="container">
+            <nav>
+              <ul>
+                <li>
+                  <a
+                    href="#pocetna-page"
+                    class="active"
+                    onclick="showPage('pocetna-page'); setActive('pocetna-page')"
+                    >Početna</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#web-page"
+                    onclick="showPage('web-page'); setActive('web-page')"
+                    >Web</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#video-page"
+                    onclick="showPage('video-page');setActive('video-page')"
+                    >Video</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#foto-page"
+                    onclick="showPage('foto-page');setActive('foto-page')"
+                    >Foto</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#kontakt-page"
+                    onclick="showPage('kontakt-page');setActive('kontakt-page');"
+                    >Kontakt</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
       </div>
-
-      <div id="real-estate">
-        <h2>REAL ESTATE</h2>
-        <iframe
-          src="https://drive.google.com/file/d/1Am_U0HR6pN64YA-42wlRUw_NIVFKfVlB/preview"
-          width="600"
-          height="350"
-          allow="autoplay"
-        ></iframe>
+      <div style="padding-top: 15%">
+        <a href="#content"
+          ><span id="arrow-down-container">
+            <img
+              src="./images/icons/sigle_down_arrow_white.png"
+              id="arrow-down-icon"
+            /> </span
+        ></a>
       </div>
     </div>
+    <video
+      src="video/beki_web.mp4"
+      id="heading-video"
+      autoplay
+      loop
+      muted
+    ></video>
+
+    <div id="blank"></div>
+
+    <div id="content">
+      <div id="pocetna-page" class="page">
+        <h2>Početna</h2>
+
+        <div class="text-container">
+          Dobrodošli na našu kreativnu platformu posvećenu web dizajnu, video
+          snimanju, i fotografiji! Ovdje uživamo u umjetnosti digitalnog
+          stvaralaštva, te smo ponosni na više od 50 uspješno završenih
+          projekata koji odražavaju našu strast i posvećenost.
+        </div>
+        <div class="text-container">
+          Naša polazna točka je - ponuditi kompletnu uslugu kako bismo Vas i Vaš
+          posao postavili na digitalno tržište, a cilj je rast Vašeg posla i
+          prepoznatljivosti.
+        </div>
+        <div class="text-container">
+          Imate ideju? Idemo ju realizirati. Ako nemate, pošaljite nam upit i
+          poslušajte našu.
+        </div>
+      </div>
+      <!--KRAJ POČETNE KARTICE-->
+
+      <div id="web-page" class="page">
+        <h2>Web</h2>
+
+        <div class="text-container">
+          Naš tim stručnjaka za web dizajn stvara vizualno privlačne,
+          funkcionalne, i intuitivne web stranice. Bez obzira radi li se o
+          osobnom portfoliu, poslovnom sajtu ili online trgovini, svaki projekt
+          je prilika za nas da istražimo nove ideje i inovacije.
+        </div>
+
+        <div class="gallery-container">
+          <div id="gallery-container-left">
+            <div class="website-gallery-column" id="gallery-image-1">
+              <img src="./images/website-gallery/star2studio.JPG" />
+            </div>
+            <div class="website-gallery-column" id="gallery-image-3">
+              <img src="./images/website-gallery/veseliorkestar.JPG" />
+            </div>
+            <div class="website-gallery-column" id="gallery-image-5">
+              <img
+                src="https://img.freepik.com/free-photo/digital-painting-mountain-with-colorful-tree-foreground_1340-25699.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1699142400&semt=ais"
+              />
+            </div>
+            <div class="website-gallery-column" id="gallery-image-7">
+              <img
+                src="https://images.unsplash.com/photo-1700686426826-913b0509c4bc?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              />
+            </div>
+            <!--<div id="empty-div-left" class="website-gallery-column"></div>-->
+          </div>
+          <div id="gallery-container-right">
+            <!--<div id="empty-div-right" class="website-gallery-column"></div>-->
+            <div class="website-gallery-column" id="gallery-image-2">
+              <img
+                src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?cs=srgb&dl=pexels-james-wheeler-414612.jpg&fm=jpg"
+              />
+            </div>
+            <div class="website-gallery-column" id="gallery-image-4">
+              <img src="./images/website-gallery/neosoundstation2.JPG" />
+            </div>
+
+            <div class="website-gallery-column" id="gallery-image-6">
+              <img
+                src="https://media.istockphoto.com/id/1225173869/photo/house-boat-anchored-in-lake-with-jungle-background-backwaters-kerala-india.jpg?s=612x612&w=0&k=20&c=uo-bsRQjhlT9AgeWBs_pkSvHQwStCelMC75EUpzwjHU="
+              />
+            </div>
+
+            <div class="website-gallery-column" id="gallery-image-8">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCQwn4a_TR68qjoCIrzfFtBnUmnd0KvnsG7A&usqp=CAU"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="video-page" class="page">
+        <h2>Video</h2>
+
+        <div class="text-container">
+          S posvećenošću prema vizualnom pripovijedanju, naša ekipa video
+          produkcije stvara dinamične i zapažene video sadržaje. Bilo da je
+          riječ o marketinškim kampanjama, dokumentarcima ili promotivnim
+          videima, svaki projekat je prilika za izražavanje priče kroz
+          jedinstven vizualni jezik.
+        </div>
+
+        <div id="random-reels" class="video-container">
+          <h2>RANDOM REELS</h2>
+          <iframe
+            class="video-source-vertical"
+            src="https://drive.google.com/file/d/1WnxyLQ2MCkX4GVJy2FeEOOzM4yywa6QK/preview"
+            allow="autoplay"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            class="video-source"
+            src="https://drive.google.com/file/d/1o8WE2ycoAXaGxAcL-7eDzrdUbA_JeDJ6/preview"
+            allow="autoplay"
+            frameborder="0"
+          ></iframe>
+          <iframe
+            class="video-source-vertical"
+            src="https://drive.google.com/file/d/1IsuEvfJcUGs0rw7VfYxWF80xHim6B_t9/preview"
+            allow="autoplay"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div id="music-videos" class="video-container">
+          <h2>MUSIC VIDEOS</h2>
+          <iframe
+            src="https://drive.google.com/file/d/1m4nilHHY4_G-ZIzHJKegMGU9KdJkMMBP/preview"
+            width="600"
+            height="350"
+            allow="autoplay"
+          ></iframe>
+          <iframe
+            src="https://www.youtube.com/embed/ceSYy0q6nHU?si=FzWmssQv1tc2cHXU"
+            width="600"
+            height="350"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            src="https://drive.google.com/file/d/1pwIVMLF4CqvAvQ63-ZphIH1i2foNZI2h/preview"
+            width="600"
+            height="350"
+            allow="autoplay"
+          ></iframe>
+        </div>
+
+        <div id="real-estate" class="video-container">
+          <h2>REAL ESTATE</h2>
+          <iframe
+            src="https://drive.google.com/file/d/1Am_U0HR6pN64YA-42wlRUw_NIVFKfVlB/preview"
+            width="600"
+            height="350"
+            allow="autoplay"
+          ></iframe>
+        </div>
+      </div>
+      <div id="foto-page" class="page">
+        <h2>Foto</h2>
+
+        <div class="text-container">
+          U svijetu gdje slika govori tisuću riječi, naši fotografi snimaju
+          trenutke koji će ostati zauvijek. Bez obzira je li riječ o portretima,
+          događanjima ili produkt fotografijama, trudimo se uhvatiti bit svakog
+          trenutka kroz objektiv naše kamere.
+        </div>
+      </div>
+      <div id="kontakt-page" class="page">
+        <h2>Kontakt</h2>
+      </div>
+    </div>
+    <!--END OF CONTENT DIV-->
+
+    <script src="script/script.js"></script>
   </body>
 </html>
