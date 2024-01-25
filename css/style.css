@@ -115,14 +115,14 @@ header a.active {
 }
 
 .video-source {
-  width: 600px;
+  width: 350px;
   height: 350px;
   margin: auto;
 }
 
 .video-source-vertical {
   width: 350px;
-  height: 600px;
+  height: 350px;
   margin: auto;
 }
 
