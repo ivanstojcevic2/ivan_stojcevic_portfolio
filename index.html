@@ -12,11 +12,11 @@
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ivan Stojčević</title>
+    <title>i-dizajn</title>
   </head>
   <body>
     <div id="header">
-      <h1>Ivan Stojčević</h1>
+      <img src="./images/logo_white.png" alt="" id="header-logo" />
       <div id="navigacija-desktop">
         <header>
           <div class="container">
@@ -134,19 +134,24 @@
         <h2>Početna</h2>
 
         <div class="text-container">
-          Dobrodošli na našu kreativnu platformu posvećenu web dizajnu, video
-          snimanju, i fotografiji! Ovdje uživamo u umjetnosti digitalnog
-          stvaralaštva, te smo ponosni na više od 50 uspješno završenih
-          projekata koji odražavaju našu strast i posvećenost.
+          Kreativna platforma za web dizajn, video produkciju i fotografiju.
+          Ponosni smo na više od 50 uspješno završenih projekata i lijenata koji
+          odražavaju našu strast i posvećenost poslu.
         </div>
-        <div class="text-container">
-          Naša polazna točka je - ponuditi kompletnu uslugu kako bismo Vas i Vaš
-          posao postavili na digitalno tržište, a cilj je rast Vašeg posla i
-          prepoznatljivosti.
-        </div>
-        <div class="text-container">
-          Imate ideju? Idemo ju realizirati. Ako nemate, pošaljite nam upit i
-          poslušajte našu.
+        <div class="flex-wrapper">
+          <div class="flex-column">
+            <div class="portrait-container">
+              <img src="./images/ivan_portret.jpeg" alt="" />
+            </div>
+          </div>
+          <div class="flex-column">
+            <p class="quoted-text">
+              Cilj našeg poslovanja je plasman "web identiteta" - ne samo
+              stranice, već kompletnog sadržaja koji je potreban poslovnim
+              korisnicima da podignu svoje poslovanje na višu razinu ili prošire
+              trenutno.
+            </p>
+          </div>
         </div>
       </div>
       <!--KRAJ POČETNE KARTICE-->
@@ -155,43 +160,65 @@
         <h2>Web</h2>
 
         <div class="text-container">
-          Naš tim stručnjaka za web dizajn stvara vizualno privlačne,
-          funkcionalne, i intuitivne web stranice. Bez obzira radi li se o
-          osobnom portfoliu, poslovnom sajtu ili online trgovini, svaki projekt
-          je prilika za nas da istražimo nove ideje i inovacije.
+          Razvijamo vizualno privlačne, funkcionalne, i intuitivne web stranice.
+          Bez obzira radi li se o osobnom portfoliu, poslovnom sajtu ili online
+          trgovini, svaki projekt nam je prilika za istraživanje novih ideja i
+          inovacija.
         </div>
 
         <div class="gallery-container">
           <div id="gallery-container-left">
             <div class="website-gallery-column" id="gallery-image-1">
-              <img src="./images/website-gallery/star2studio.JPG" />
+              <a href="./404.html" target="_blank"
+                ><img src="./images/website-gallery/star2studio.JPG"
+              /></a>
             </div>
             <div class="website-gallery-column" id="gallery-image-3">
-              <a href="https://github.com/ivanstojcevic2/veseli_orkestar/"><img src="./images/website-gallery/veseliorkestar.png" /></a>
+              <a
+                href="https://ivanstojcevic2.github.io/veseli_orkestar/"
+                target="_blank"
+                ><img src="./images/website-gallery/veseliorkestar.png"
+              /></a>
             </div>
             <div class="website-gallery-column" id="gallery-image-5">
-              <a href="https://github.com/ivanstojcevic2/auto_miljanovic/"><img src="./images/website-gallery/auto_miljanovic.png" /></a>
+              <a
+                href="https://ivanstojcevic2.github.io/auto_miljanovic/"
+                target="_blank"
+                ><img src="./images/website-gallery/auto_miljanovic.png"
+              /></a>
             </div>
             <div class="website-gallery-column" id="gallery-image-7">
-              <a href="https://github.com/ivanstojcevic2/krovod_tim/"><img src="./images/website-gallery/krovod_tim.png" /></a>
+              <a
+                href="https://ivanstojcevic2.github.io/krovod_tim/"
+                target="_blank"
+                ><img src="./images/website-gallery/krovod_tim.png"
+              /></a>
             </div>
             <!--<div id="empty-div-left" class="website-gallery-column"></div>-->
           </div>
           <div id="gallery-container-right">
             <!--<div id="empty-div-right" class="website-gallery-column"></div>-->
             <div class="website-gallery-column" id="gallery-image-2">
-              <img src="./images/website-gallery/za_sutra.png" />
+              <a href="./404.html" target="_blank"
+                ><img src="./images/website-gallery/za_sutra.png"
+              /></a>
             </div>
             <div class="website-gallery-column" id="gallery-image-4">
-              <img src="./images/website-gallery/neosoundstation2.JPG" />
+              <a href="./404.html" target="_blank"
+                ><img src="./images/website-gallery/neosoundstation2.JPG"
+              /></a>
             </div>
 
             <div class="website-gallery-column" id="gallery-image-6">
-              <img src="" />
+              <a href="./404.html" target="_blank"
+                ><img src="./images/website-gallery/glamour_beauty.png"
+              /></a>
             </div>
 
             <div class="website-gallery-column" id="gallery-image-8">
-              <img src="" />
+              <a href="./404.html" target="_blank"
+                ><img src="./images/website-gallery/vacenovski.png"
+              /></a>
             </div>
           </div>
         </div>
@@ -270,9 +297,57 @@
           događanjima ili produkt fotografijama, trudimo se uhvatiti bit svakog
           trenutka kroz objektiv naše kamere.
         </div>
+
+        <div class="photo-gallery">
+          <div class="photo-container">
+            <img src="./images/photo-gallery/01.jpg" alt="" />
+          </div>
+          <div class="photo-container">
+            <img src="./images/photo-gallery/02.jpg" alt="" />
+          </div>
+          <div class="photo-container">
+            <img src="./images/photo-gallery/03.jpg" alt="" />
+          </div>
+          <div class="photo-container">
+            <img src="./images/photo-gallery/04.jpg" alt="" />
+          </div>
+          <div class="photo-container">
+            <img src="./images/photo-gallery/05.png" alt="" />
+          </div>
+          <div class="photo-container">
+            <img src="./images/photo-gallery/06.jpg" alt="" />
+          </div>
+          <div class="photo-container">
+            <img src="./images/photo-gallery/07.jpg" alt="" />
+          </div>
+          <div class="photo-container">
+            <img src="./images/photo-gallery/08.png" alt="" />
+          </div>
+          <div class="photo-container">
+            <img src="./images/photo-gallery/09.png" alt="" />
+          </div>
+          <div class="photo-container">
+            <img src="./images/photo-gallery/10.jpg" alt="" />
+          </div>
+          <div class="photo-container">
+            <img src="./images/photo-gallery/11.jpg" alt="" />
+          </div>
+          <div class="photo-container">
+            <img src="./images/photo-gallery/12.jpg" alt="" />
+          </div>
+        </div>
       </div>
+
       <div id="kontakt-page" class="page">
         <h2>Kontakt</h2>
+
+        <div class="text-container">
+          Obratite nam se na:
+          <ul>
+            <li>info@i-dizajn.hr</li>
+            <li>+385 98 233 736</li>
+          </ul>
+        </div>
       </div>
     </div>
     <!--END OF CONTENT DIV-->
