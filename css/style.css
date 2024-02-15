@@ -7,11 +7,8 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-h1 {
-  color: white;
-  font-weight: bolder;
-  padding-bottom: 20px;
-  font-size: 48px;
+#header-logo {
+  width: 40%;
 }
 
 header {
@@ -104,6 +101,7 @@ header a.active {
 #content {
   text-align: center;
   background-color: white;
+  font-size: 14pt;
 }
 
 .page h2 {
@@ -147,9 +145,37 @@ header a.active {
   text-align: center;
 }
 
+.flex-wrapper {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  width: 300px;
+  padding: 2%;
+}
+
+.portrait-container {
+  height: 200px;
+  width: 200px;
+  clip-path: circle(50% at 50% 50%);
+  overflow: hidden;
+  margin: auto;
+}
+
+.portrait-container img {
+  width: 100%;
+}
+
+.quoted-text {
+  font-style: italic;
+}
+
 .website-gallery-column {
   width: 400px;
-  height: 220px;
+  height: 190px;
   overflow: hidden;
 }
 .website-gallery-column img {
@@ -164,6 +190,57 @@ header a.active {
 .website-gallery-column img:hover {
   transform: scale(1.1);
   cursor: pointer;
+}
+
+.photo-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-container {
+  height: 280px;
+  width: 280px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.photo-container img {
+  height: 100%;
+  width: auto;
+}
+
+.photo-container:nth-of-type(4) img {
+  margin-left: -20%;
+}
+
+.photo-container:nth-of-type(6) img {
+  margin-left: -30%;
+}
+
+.photo-container:nth-of-type(7) img {
+  margin-left: -15%;
+}
+
+.photo-container:nth-of-type(8) img {
+  margin-left: -35%;
+}
+
+.photo-container:nth-of-type(9) img {
+  margin-left: -63%;
+}
+
+.photo-container:nth-of-type(10) img {
+  margin-left: -50%;
+}
+
+.photo-container:nth-of-type(11) img {
+  margin-left: -10%;
+}
+
+.photo-container:nth-of-type(12) img {
+  margin-left: -20%;
 }
 
 @media only screen and (max-width: 767px) {
@@ -194,10 +271,6 @@ header a.active {
     left: 50%;
     transform: translate(-50%, 2%);
     z-index: 1000;
-  }
-
-  #arrow-down-container {
-    display: none;
   }
 
   #blank {
@@ -241,10 +314,6 @@ header a.active {
     z-index: 1000;
   }
 
-  #arrow-down-container {
-    display: none;
-  }
-
   #blank {
     padding-top: 50%;
   }
@@ -271,6 +340,12 @@ header a.active {
     padding-top: 10%;
     padding-left: 55%;
     position: absolute;
+  }
+}
+
+@media screen and (max-width: 1249px) {
+  #arrow-down-container {
+    display: none;
   }
 }
 
