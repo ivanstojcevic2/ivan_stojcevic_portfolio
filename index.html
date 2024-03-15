@@ -23,34 +23,36 @@
       <nav>
         <div class="navbar">
           <div class="logo">
-            <a href="#"><img src="./images/logo.png" alt="" /></a>
+            <a href="#"
+              ><img src="./images/logo_white.png" alt="" onclick="homeLink()"
+            /></a>
           </div>
           <div class="toggle-btn" onclick="toggleNav()">
             <i class="fa-solid fa-plus"></i>
           </div>
         </div>
         <ul class="nav-links">
-          <a
+          <a href="#link-landing"
             ><li onclick="homeLink()">
-              <div class="nav-button active-link" id="home-li">Početna</div>
+              <div class="nav-button" id="home-li">Početna</div>
             </li></a
           >
-          <a
+          <a href="#link-landing"
             ><li onclick="webLink()">
               <div class="nav-button" id="web-li">Web</div>
             </li></a
           >
-          <a
+          <a href="#link-landing"
             ><li onclick="videoLink()">
               <div class="nav-button" id="video-li">Video</div>
             </li></a
           >
-          <a
+          <a href="#link-landing"
             ><li onclick="fotoLink()">
               <div class="nav-button" id="foto-li">Foto</div>
             </li></a
           >
-          <a
+          <a href="#contact-section"
             ><li onclick="contactLink()">
               <div class="nav-button" id="contact-li">Kontakt</div>
             </li></a
@@ -59,10 +61,12 @@
       </nav>
 
       <div class="header-graphic">
-        <img src="./images/tech.jpg" alt="" />
+        <div id="header-video-wrapper">
+          <video src="./video/heading-video.mp4" autoplay muted loop></video>
+        </div>
       </div>
     </header>
-
+    <div id="link-landing"></div>
     <main>
       <!-- about -->
       <section id="about-section" class="hideable-section">
@@ -97,6 +101,14 @@
                 projekatima pružaju nam mogućnost da iznova dižemo svoje
                 standarde na idućem projektu.
               </p>
+              <div class="image-wrapper">
+                <div class="more-about-button">
+                  <div class="more-about-inner" onclick="webLink()">
+                    <a href="#link-landing">Više</a>
+                  </div>
+                </div>
+                <img src="./images/developing.jpg" alt="" />
+              </div>
             </div>
             <div id="floral-white">
               <h3>Video i foto</h3>
@@ -107,6 +119,14 @@
                 Partnerski odnos s Jadran Film<sup>©</sup> i drugim studijima
                 omogućuje uvjete za produkciju najviše razine.
               </p>
+              <div class="image-wrapper">
+                <div class="more-about-button">
+                  <div class="more-about-inner" onclick="videoLink()">
+                    <a href="#link-landing">Više</a>
+                  </div>
+                </div>
+                <img src="./images/camera.png" alt="" />
+              </div>
             </div>
             <div id="antique-white">
               <h3>Audio</h3>
@@ -117,18 +137,23 @@
                 produkciji pjesama, jingle-ova, reklama i filmskih komada muzike
                 se savršeno nadopunjuje na našu video priču.
               </p>
+              <div class="image-wrapper">
+                <div class="more-about-button">
+                  <div class="more-about-inner" onclick="videoLink()">
+                    <a href="#link-landing">Više</a>
+                  </div>
+                </div>
+                <img src="./images/audio.jpg" alt="" />
+              </div>
             </div>
           </div>
-          <img src="./images/camera.png" alt="" />
-          <img src="./images/audio.jpg" alt="" />
-          <img src="./images/developing.jpg" alt="" />
         </div>
       </div>
 
       <!-- web -->
       <section id="web-section" class="hideable-section">
         <!-- content -->
-        <h2>web</h2>
+        <h2>Web</h2>
 
         <div class="block-container">
           <p>
@@ -177,7 +202,7 @@
       <!-- video -->
       <section id="video-section" class="hideable-section">
         <!-- content -->
-        <h2>video</h2>
+        <h2>Video</h2>
 
         <div class="block-container">
           <p>Iz naše video produkcije...</p>
@@ -194,26 +219,29 @@
         </div>
 
         <div id="music-videos">
-          <video
-            src="./video/samo-da-si-dobro-ti.mp4"
-            controls
-            class="music-video"
-          ></video>
+          <div class="video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/zhlvKlKmBDc?si=KwfwfNMYIl4_Lo5f"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
 
           <div id="music-videos-tiles">
-            <div class="mv-tile">
-              <video src="./video/ti_i_ja.mp4" controls></video>
-            </div>
-            <div class="mv-tile">
+            <div class="video-wrapper">
               <iframe
-                width="100%"
-                height="100%"
                 src="https://www.youtube.com/embed/ceSYy0q6nHU?si=JVhXGg-hXgKDJ1-9"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
               ></iframe>
+            </div>
+
+            <div>
+              <video src="./video/ti_i_ja.mp4" controls></video>
             </div>
           </div>
         </div>
@@ -222,7 +250,22 @@
       <!-- foto -->
       <section id="foto-section" class="hideable-section">
         <!-- content -->
-        <h2>foto</h2>
+        <h2>Fotografija</h2>
+
+        <div class="block-container">
+          <p>Slika govori 1000 riječi, ljepota je u oku promatrača...</p>
+          <p>
+            Dobro poznati izrazi ne vrijede ako fotografija nije dobra. Neke
+            fotografije se dogode "same od sebe", a za ostalu većinu slučajeva,
+            potrebno je vrijeme i vještina.
+          </p>
+          <p>
+            Ukus za razliku od fotografije ne može biti crno/bijel, ali uz naše
+            alate, vještinu i iskustvo, svaka fotografija će reći upravo ono što
+            želimo i imati će ljepotu u oku svakog promatrača.
+          </p>
+        </div>
+
         <div class="gallery-container">
           <div class="gallery-item">
             <img src="./images/photos/01.jpg" alt="Image 1" />
@@ -290,7 +333,7 @@
             </div>
           </div>
           <div class="flex-card">
-            <img src="./images/office.png" alt="" />
+            <img src="./images/ilustrated-office.png" alt="" />
           </div>
         </div>
       </secction>

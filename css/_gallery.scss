@@ -18,3 +18,15 @@ video {
   height: 100%;
   object-fit: cover;
 }
+
+#foto-section {
+  img {
+    filter: grayscale(100%);
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+  }
+}
+
+#foto-section img:hover {
+  filter: grayscale(0%);
+}
