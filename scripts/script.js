@@ -87,13 +87,6 @@ var navButtons = document.getElementsByClassName("nav-button");
 
 for (var i = 0; i < navButtons.length; i++) {
   navButtons[i].addEventListener("click", function () {
-    // var currentButton = document.getElementsByClassName("active-link");
-    // currentButton[0].className = currentButton[0].className.replace(
-    //   " active-link",
-    //   ""
-    // );
-    // this.className += " active-link";
-
     // Zatvori izbornik s linkovima nakon klika na link
     const navLinks = document.querySelector(".nav-links");
     navLinks.classList.remove("active");
@@ -109,6 +102,12 @@ var videoSection = document.getElementById("video-section");
 var fotoSection = document.getElementById("foto-section");
 var contactSection = document.getElementById("contact-section");
 
+var homeLi = document.getElementById("home-li");
+var webLi = document.getElementById("web-li");
+var videoLi = document.getElementById("video-li");
+var fotoLi = document.getElementById("foto-li");
+var contactLi = document.getElementById("contact-li");
+
 function homeLink() {
   homeSection.style.display = "block";
   aboutSubsection.style.display = "block";
@@ -116,6 +115,12 @@ function homeLink() {
   videoSection.style.display = "none";
   fotoSection.style.display = "none";
   contactSection.style.display = "block";
+
+  homeLi.classList.add("active-link");
+  webLi.classList.remove("active-link");
+  videoLi.classList.remove("active-link");
+  fotoLi.classList.remove("active-link");
+  contactLi.classList.remove("active-link");
 }
 
 function webLink() {
@@ -125,6 +130,12 @@ function webLink() {
   videoSection.style.display = "none";
   fotoSection.style.display = "none";
   contactSection.style.display = "none";
+
+  homeLi.classList.remove("active-link");
+  webLi.classList.add("active-link");
+  videoLi.classList.remove("active-link");
+  fotoLi.classList.remove("active-link");
+  contactLi.classList.remove("active-link");
 }
 
 function videoLink() {
@@ -134,6 +145,12 @@ function videoLink() {
   videoSection.style.display = "block";
   fotoSection.style.display = "none";
   contactSection.style.display = "none";
+
+  homeLi.classList.remove("active-link");
+  webLi.classList.remove("active-link");
+  videoLi.classList.add("active-link");
+  fotoLi.classList.remove("active-link");
+  contactLi.classList.remove("active-link");
 }
 
 function fotoLink() {
@@ -143,6 +160,12 @@ function fotoLink() {
   videoSection.style.display = "none";
   fotoSection.style.display = "block";
   contactSection.style.display = "none";
+
+  homeLi.classList.remove("active-link");
+  webLi.classList.remove("active-link");
+  videoLi.classList.remove("active-link");
+  fotoLi.classList.add("active-link");
+  contactLi.classList.remove("active-link");
 }
 
 function contactLink() {
@@ -152,4 +175,10 @@ function contactLink() {
   videoSection.style.display = "none";
   fotoSection.style.display = "none";
   contactSection.style.display = "block";
+
+  homeLi.classList.remove("active-link");
+  webLi.classList.remove("active-link");
+  videoLi.classList.remove("active-link");
+  fotoLi.classList.remove("active-link");
+  contactLi.classList.add("active-link");
 }
